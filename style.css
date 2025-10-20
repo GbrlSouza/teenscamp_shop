@@ -1,0 +1,18 @@
+/* style.css */
+body {
+    /* Bootstrap 5 já usa 'sans-serif', mas definimos a customizada */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* Efeito de contorno (stroke) para títulos */
+.title-outline { 
+    -webkit-text-stroke: 2px #8B0000; /* Cor vermelha escura */
+    color: transparent; /* Torna o texto transparente, deixando apenas o contorno */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Efeito de brilho sutil */
+}
+
+/* Efeito hover para os cards de produto (adaptado do Tailwind) */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important; /* Aumenta o box-shadow do Bootstrap */
+}
